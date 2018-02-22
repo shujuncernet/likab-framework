@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+						http://www.springframework.org/schema/beans/spring-beans.xsd">
+						
+	<!-- 引用rmi服务 -->
+	<bean id="helloService" class="org.likabframework.rmi.support.RmiProxyFactoryBean">
+		<property name="loadBalance" value="consumerHash"/>
+		<property name="zkAddress" value="192.168.233.130:2181"/>
+		<property name="serviceInterface" value="org.likabframework.example.service.IHelloService"/>
+		<property name="serviceName" value="HelloService"/>
+	</bean>
+</beans>

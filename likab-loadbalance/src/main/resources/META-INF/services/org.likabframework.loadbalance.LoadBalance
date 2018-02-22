@@ -1,0 +1,3 @@
+org.likabframework.loadbalance.RoundRobinLoadBalance
+org.likabframework.loadbalance.RandomLoadBalance
+org.likabframework.loadbalance.ConsumerHashLoadBalance
