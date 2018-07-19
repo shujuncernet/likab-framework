@@ -5,12 +5,7 @@
 
 一、likab框架简介
 
-likab框架提供不同方式的系统间的跨进程通信，主要的功能包括：
-
-- [x] [高可用RMI远程调用](https://xiapshen.github.io/likab-framework/docs/likab-rmi%E7%94%A8%E6%88%B7%E6%8C%87%E5%8D%97)
-- [ ] RPC远程过程调用
-- [ ] HTTP调用器
-- [ ] Web Service远程调用
+likab框架提供高可用RMI远程调用，基于java rmi和zookeeper构建成的高可用远程通讯框架。
 
 ------
 二、各层说明
